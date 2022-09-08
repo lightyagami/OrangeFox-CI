@@ -2,10 +2,10 @@
 
 # Device
 export FOX_BRANCH="fox_9.0"
-export DT_LINK="https://gitlab.com/OrangeFox/device/beryllium.git -b fox_9.0"
+export DT_LINK="https://github.com/pjgowtham/recovery_device_oplus_nicky.git"
 
-export DEVICE="beryllium"
-export OEM="xiaomi"
+export DEVICE="RMX1921"
+export OEM="Realme"
 
 # Build Target
 ## "recoveryimage" - for A-Only Devices without using Vendor Boot
@@ -22,7 +22,7 @@ DEPS=(
 )
 
 # Extra Command
-export EXTRA_CMD="export OF_MAINTAINER=Sushrut1101"
+export EXTRA_CMD="export OF_MAINTAINER=Unlucky6969"
 
 # Magisk
 ## Use the Latest Release of Magisk for the OrangeFox addon
