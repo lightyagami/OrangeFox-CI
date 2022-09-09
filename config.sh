@@ -2,7 +2,7 @@
 
 # Device
 export FOX_BRANCH="fox_12.1"
-export DT_LINK="https://github.com/pjgowtham/recovery_device_oplus_nicky device/oplus/nicky"
+export DT_LINK="https://github.com/pjgowtham/recovery_device_oplus_nicky"
 
 export DEVICE="nicky"
 export OEM="Realme"
