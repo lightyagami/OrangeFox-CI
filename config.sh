@@ -2,10 +2,10 @@
 
 # Device
 export FOX_BRANCH="fox_12.1"
-export DT_LINK="https://github.com/pjgowtham/recovery_device_oplus_nicky"
+export DT_LINK="https://github.com/venomsnake/recovery_device_realme_rmx1921.git"
 
-export DEVICE="nicky"
-export OEM="oplus"
+export DEVICE="rmx1921"
+export OEM="realme"
 
 # Build Target
 ## "recoveryimage" - for A-Only Devices without using Vendor Boot
@@ -22,11 +22,11 @@ DEPS=(
 )
 
 # Extra Command
-export EXTRA_CMD="export OF_MAINTAINER=Unlucky6969"
+export EXTRA_CMD="export OF_MAINTAINER=VenomSnake"
 
 # Magisk
 ## Use the Latest Release of Magisk for the OrangeFox addon
-export OF_USE_LATEST_MAGISK=true
+export OF_USE_LATEST_MAGISK=false
 
 # Not Recommended to Change
 export SYNC_PATH="$HOME/work" # Full (absolute) path.
