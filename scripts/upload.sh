@@ -40,8 +40,15 @@ transfer wet $FILENAME > link.txt || { echo "ERROR: Failed to Upload the Build!"
 # Mirror to oshi.at
 curl -T $FILENAME https://oshi.at/${FILENAME}/${OUTPUT} > mirror.txt || { echo "WARNING: Failed to Mirror the Build!"; }
 
-DL_LINK=$(cat link.txt | grep Download | cut -d\  -f3)
-MIRROR_LINK=$(cat mirror.txt | grep Download | cut -d\  -f1)
+chatId="${TG_CHAT_ID}"
+botToken="${TG_TOKEN}"
+curdir=$PWD 
+echo sending $curdir/$1
+
+curl -F chat_id=$chatId -F document=@$curdir/$1 https://api.telegram.org/bot$botToken/sendDocument
+
+MIRROR_LINK=$(cat link.txt | grep Download | cut -d\  -f3)
+DL_LINK=$(cat mirror.txt | grep Download | cut -d\  -f1)
 
 # Show the Download Link
 echo "=============================================="
